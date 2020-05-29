@@ -20,5 +20,5 @@ setup(
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Intended Audience :: Developers",
-    ]
+    ],
 )
