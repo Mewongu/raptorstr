@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tests for conversion and checking if strings conform to `snake_case`, `camelCase`, `PascalCase` and `kebab-case`
 - Conversion functions to `snake_case`, `camelCase`, `PascalCase` and `kebab-case`
 - Validation functions for checking if a string is `snake_case`, `camelCase`, `PascalCase` or `kebab-case`
+- [pre-commit-config.yaml](./.pre-commit-config.yaml) for further ease of development
