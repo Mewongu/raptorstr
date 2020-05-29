@@ -1,5 +1,6 @@
 # SPDX-License-Identifer: MPL-2.0
 # Copyright © 2020 Andreas Stenberg
+from typing import Tuple
 
 
 def levenshtein_distance(str1: str, str2: str) -> int:
@@ -40,3 +41,13 @@ def similarity(str1: str, str2: str) -> float:
     :return: Similarity coefficient for the two strings
     """
     return 1 - (levenshtein_distance(str1, str2) / max(len(str1), len(str2)))
+
+
+def most_similar(search_string: str, *strings: Tuple[str, ...]) -> str:
+    """
+
+    :param search_string:
+    :param strings:
+    :return: The most similar string in strings to search_string
+    """
+    return max(strings, key=lambda x: similarity(search_string, x))
