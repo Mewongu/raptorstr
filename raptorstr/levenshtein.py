@@ -32,3 +32,11 @@ def levenshtein_distance(str1: str, str2: str) -> int:
     return d[len(str1) - 1][len(str2) - 1]
 
 
+def similarity(str1: str, str2: str) -> float:
+    """
+    Calculates a similarity coefficient for two strings.
+    :param str1:
+    :param str2:
+    :return: Similarity coefficient for the two strings
+    """
+    return 1 - (levenshtein_distance(str1, str2) / max(len(str1), len(str2)))
