@@ -18,7 +18,10 @@ COMPILED_V_S = re.compile(VALID_STRING)
 
 def tokenize_string(string: str) -> Generator[str, None, None]:
     if not COMPILED_V_S.fullmatch(string):
-        msg = f'Supplied string "{string}" is not a valid function identifier to begin with. Must match regexp "{VALID_STRING}"'
+        msg = (
+            f'Supplied string "{string}" is not a valid function identifier to begin '
+            f'with. Must match regexp "{VALID_STRING}"'
+        )
         raise RuntimeError(msg)
     sanitized_string = unicodedata.normalize("NFKC", string)
     token_regex = "|".join(f"(?P<{ident}>{regexp})" for ident, regexp in TOKENS)
