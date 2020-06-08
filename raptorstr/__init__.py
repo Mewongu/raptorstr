@@ -2,7 +2,7 @@
 # Copyright © 2020 Andreas Stenberg
 
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 
 from raptorstr.formatting import snake_case, camel_case, pascal_case, kebab_case
