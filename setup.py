@@ -24,7 +24,7 @@ decisions regarding where one is to break strings in different scenarios.
     author_email="andreas@mewongu.com",
     url="https://github.com/Mewongu/raptorstr",
     classifiers=[
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
         "Intended Audience :: Developers",
     ],
 )
