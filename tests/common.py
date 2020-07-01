@@ -111,4 +111,12 @@ TABLE_OF_CASES = (
         pascal_case="IsAbrAttr",
         kebab_case="is-abr-attr",
     ),
+    CaseEntry(
+        normal="the_fat_cat",  # is Abbreviation Attribute
+        tokenized=["the", "fat", "cat"],
+        snake_case="the_fat_cat",
+        camel_case="theFatCat",
+        pascal_case="TheFatCat",
+        kebab_case="the-fat-cat",
+    ),
 )
